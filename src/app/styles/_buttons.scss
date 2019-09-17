@@ -1,0 +1,10 @@
+@import 'colors';
+
+.btn {
+  &-filled {
+    background: $indigo;
+    color: $white;
+    height: 40px;
+    width: 130px;
+  }
+}

@@ -1,0 +1,117 @@
+// Colores
+$indigo-soft: #6F74DD;
+$indigo: #3949AB;
+$indigo-deep: #00227B;
+
+$salmon-soft: #FFBCAF;
+$salmon: #FF8A80;
+$salmon-deep: #BB3F3F;
+
+$red-passion: #B92D00;
+
+$gray-soft: #AAAAAA;
+$gray: #888888;
+
+$white: #FFFFFF;
+$black: #000000;
+
+// Fuentes 
+
+$Montserrat: 'Montserrat',
+sans-serif;
+$Raleway: 'Raleway',
+sans-serif;
+
+// Botones
+
+.btn {
+  height: 40px;
+  width: 150px;
+  outline: 0;
+  border-radius: 10px;
+  border: none;
+  font-family: $Montserrat;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba($indigo-soft, 0.4);
+
+  &-primary {
+    @extend .btn;
+    background: $indigo;
+    color: $white;
+
+    &:hover {
+      background: rgba($indigo, 0.8);
+      cursor: pointer;
+    }
+  }
+
+  &-secondary {
+    @extend .btn;
+    background: $white;
+    color: $indigo;
+    transition: all 0.3s;
+
+    &:hover {
+      background: $indigo;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+
+// Inputs
+
+.input {
+  background: $white;
+  outline: 0;
+  border: none;
+  font-family: $Montserrat;
+  padding: 0.35rem 0.5rem;
+  font-weight: 600;
+
+  &-primary {
+    @extend .input;
+    border: 1px solid $gray-soft;
+    color: $gray-soft;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: $gray-soft;
+    }
+  }
+}
+
+// Textos
+
+.paragraph {
+  font-family: $Raleway;
+  color: gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: $Montserrat;
+  color: $gray;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-family: $Raleway;
+  color: $gray;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link {
+  font-family: $Montserrat;
+  font-weight: 500;
+  color: $gray;
+  text-decoration: none;
+
+  &:hover {
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid $gray;
+  }
+}

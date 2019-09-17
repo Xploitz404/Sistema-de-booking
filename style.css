@@ -1,0 +1,79 @@
+.btn, .btn-secondary, .btn-primary {
+  height: 40px;
+  width: 150px;
+  outline: 0;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(111, 116, 221, 0.4);
+}
+.btn-primary {
+  background: #3949AB;
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background: rgba(57, 73, 171, 0.8);
+  cursor: pointer;
+}
+.btn-secondary {
+  background: #FFFFFF;
+  color: #3949AB;
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  background: #3949AB;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.input, .input-primary {
+  background: #FFFFFF;
+  outline: 0;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.35rem 0.5rem;
+  font-weight: 600;
+}
+.input-primary {
+  border: 1px solid #AAAAAA;
+  color: #AAAAAA;
+  border-radius: 6px;
+}
+.input-primary::placeholder {
+  color: #AAAAAA;
+}
+
+.paragraph {
+  font-family: "Raleway", sans-serif;
+  color: gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: #888888;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+  color: #888888;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #888888;
+  text-decoration: none;
+}
+.link:hover {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #888888;
+}
+
+/*# sourceMappingURL=style.css.map */

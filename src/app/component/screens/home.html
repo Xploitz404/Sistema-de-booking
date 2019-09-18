@@ -7,22 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./home.css">
-  <title>Index</title>
+  <title>Home</title>
 </head>
 
 <body>
 
+  <div class="grid">
+
   <!-- BARRA DE NAVEGACIÓN -->
   <nav class="nav">
     <div class="nav__container">
-      <a class="nav__link" href="">Registrarse</a> / <a class="nav__link" href="">Iniciar Sesión</a>
+        <p class="nav__paragraph"><a class="nav__link" href="">Registrarse</a> &#47; <a class="nav__link" href="">Iniciar Sesión</a></p>
     </div>
   </nav>
 
   <!-- ENCABEZADO -->
   <header class="header">
     <div class="header__container">
-          <img class="header__img" src="" alt="">
+          <img class="header__img" src="../../../assets/img/logo-express.png" alt="">
           <h1 class="header__title">Bienvenido a Express</h1>
           <h2 class="header__subtitle">¡Reserva lo que necesites!</h2>
     </div>
@@ -34,30 +36,37 @@
 
       <div class="section__container">
 
-            <div class="section__subcontainer">
-                  <label class="section__label">
-                    <span class="section__title">TIPO DE SERVICIO</span>
-                    <input class="section__input" type="text" placeholder="¿Qué estás buscando?">
-                  </label>
+        
+            
+          <label class="section__label1 section__labels">
+            <span class="section__title">TIPO DE SERVICIO</span>
+            <input class="section__input" type="text" placeholder="¿Qué estás buscando?">
+          </label>
 
-                  <label class="section__label">
-                    <span class="section__title">DÓNDE</span>
-                    <input class="section__input" type="text" placeholder="Dónde">
-                  </label>
-            </div>
+          <label class="section__label1 section__labels">
+            <span class="section__title">DÓNDE</span>
+            <input class="section__input" type="text" placeholder="Dónde">
+          </label>
+        
+        
+  
+          <div class="section__subcontainer section__labels">
+  
+          <label class="section__label2">
+            <span class="section__title">FECHA</span>
+            <input class="section__input" type="text" placeholder="dd/mm/aaaa">
+          </label>
 
-              
-            <label class="section__label">
-              <span class="section__title">FECHA</span>
-              <input class="section__input" type="text" placeholder="dd/mm/aaaa">
-            </label>
+          <label class="section__label3">
+            <span class="section__title">HORA</span>
+            <input class="section__input" type="text" placeholder="hh/mm">
+          </label>
 
-            <label class="section__label">
-              <span class="section__title">HORA</span>
-              <input class="section__input" type="text" placeholder="hh/mm">
-            </label>
-              
-            <button class="section__button">Buscar</button>
+          </div>
+         
+          <div class="section__btnContainer">  
+          <button class="section__button">Buscar</button>
+          </div> 
 
       </div>
     </form>
@@ -89,7 +98,7 @@
 
 
   
-  
+ </div>
   
 </body>
 

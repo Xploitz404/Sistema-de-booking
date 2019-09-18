@@ -22,16 +22,38 @@ sans-serif;
 $Raleway: 'Raleway',
 sans-serif;
 
+// BODY
 
+body {
+  margin: 0;
+}
+
+// GRID LAYOUT
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3.2fr 4.5fr .4fr;
+  grid-template-areas: "nav aside"
+                       "header aside"
+                       "section aside"
+                       "footer aside";
+}
 
 //BARRA DE NAVEGACIÓN
 
 .nav {
   font-family: $Montserrat;
+  grid-area: nav;
+
+  &__container {
+    @extend .nav;
+    display: flex;
+    justify-content: flex-end;
+  }
   
   &__container, &__link {
     @extend .nav;
-    font-weight: 500;
     color: $gray;
     text-decoration: none;
   }
@@ -41,40 +63,94 @@ sans-serif;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid $gray;
   }
+
+  &__paragraph{
+    @extend .nav;
+    margin: 20px;
+  }  
 }
 
 // ENCABEZADO
 
 .header {
   color: $black;
-  font-weight: 500;
+  grid-area: header;
+
+  &__container {
+    @extend .header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    @extend .header;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 
   &__title {
     @extend .header;
     font-family: $Montserrat;
     font-size: 32px;
+    margin: 5px;
   }
 
   &__subtitle {
     @extend .header;
     font-family: $Raleway;
     font-size: 24px;
+    margin: 0;
   }
 }
-
-// IMAGEN LATERAL
 
 // FORMULARIO
 
 .section {
   
+  grid-area: section;
+
+  &__form {
+    @extend .section;
+    padding: 10px 70px 0px 70px;
+  }
+
+  &__label1 {
+    @extend .section;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btnContainer {
+    @extend .section;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__subcontainer {
+    @extend .section;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label2, &__label3 {
+    @extend .section;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+
+  &__labels {
+    @extend .section;
+    margin-bottom: 10px;
+  }
 
   &__title {
     @extend .section;
     color: $black;
     font-family: $Raleway;
     font-size: 16px;
-    font-weight: 500;
+    margin-bottom: 15px;
   }
 
   &__input {
@@ -101,10 +177,12 @@ sans-serif;
     border-radius: 10px;
     border: none;
     font-family: $Montserrat;
-    font-weight: bold;
     box-shadow: 0 3px 6px rgba($indigo-soft, 0.4);
     background: $indigo;
     color: $white;
+    margin-top: 20px;
+    
+    
      
     &:hover {
       background: rgba($indigo, 0.8);
@@ -113,16 +191,31 @@ sans-serif;
   }
 }
 
+// IMAGEN LATERAL
+
+.aside {
+
+  grid-area: aside;
+
+  &__img{
+    @extend .aside;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
 // FOOTER
 
 .footer {
   font-family: $Montserrat;
+  grid-area: footer;
 
   &__link {
     @extend .footer;
-    font-weight: 500;
     color: $gray;
     text-decoration: none;
+    margin-left: 15px;
+    
 
     &:hover {
       @extend .footer;
@@ -130,8 +223,11 @@ sans-serif;
       border-bottom: 1px solid $gray;
     }
   }
-
 }
+
+
+
+
 
 
 
